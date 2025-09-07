@@ -22,19 +22,22 @@ export default function CreateFeed() {
   let listItems = [];
   if (!loading) {
     listItems = posts.map((element) => {
-      <li>
+      return(
+      <>
+      <div className="item">
         <AddPost
-          key={element}
-          title={element}
-          imgUrl={element}
-          likesCount={element}
-          createDate={element}
-        />
-      </li>;
+              key={element.id}
+              title={element.title}
+              imgUrl={element.imgUrl}
+              likesCount={element.likesCount}
+              createDate={element.createDate}
+            />
+      </div>
+      </>)
     });
     return (
       <>
-        <ul className="container">{listItems}</ul>
+        <div className="container">{listItems}</div>
       </>
     );
   }

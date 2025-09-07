@@ -48,3 +48,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.item {
+    margin: 15px;
+}
