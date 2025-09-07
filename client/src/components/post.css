@@ -38,9 +38,9 @@ body {
   text-align: center;
 }
 
-section {
+.end-section {
     flex: auto;
-    justify-content:space-between;
+    justify-content:flex-end;
 }
 
 .img-post {
