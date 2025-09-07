@@ -1,0 +1,50 @@
+.card {
+    background-color: aquamarine;
+    padding: 2em;
+    border-width: 5px;
+    border: #386c7aaa;
+    width: 250px;
+    height: 400px;
+}
+
+img {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.like {
+    display: inline;
+    margin: 15px;
+}
+
+p {
+    display: inline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+    flex: auto;
+    justify-content:space-between;
+}
+
+.img-post {
+    width: 248px;
+    margin-left: auto;
+    margin-right: auto;
+}
