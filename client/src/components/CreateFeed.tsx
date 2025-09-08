@@ -25,7 +25,7 @@ export default function CreateFeed() {
     listItems = posts.map((element) => {
       return(
       <>
-      <div className="item">
+      <div className="single-post">
         <AddPost
               key={element.id}
               description={element.description}

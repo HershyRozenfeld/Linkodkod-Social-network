@@ -1,41 +1,10 @@
-.card {
-    background-color: rgb(244, 242, 239);
-    border-width: 5px;
-    border: #ef500caa;
-    height: 750px;
-    width: 570px;
-    border-radius: 15px;
-    padding-top: 5px;
-    padding-left: px;
-    border-width: 10px;
-}
-
-.img-post {
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 600px;
-}
-
-.like {
-    display: inline;
-    margin: 15px;
-    /* justify-content: start; */
-}
-
-p {
-    display: inline;
-}
-
 body {
     margin: 0;
     display: flex;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
-    background-color: rgb(153, 179, 199);
+    background-color: rgb(186, 207, 223);
     background-image: url("./src/images/logo.png");
     background-repeat:repeat;
     background-attachment: fixed;
@@ -47,25 +16,45 @@ body {
     padding: 2rem;
 }
 
+.card {
+    background-color: rgb(244, 242, 239);
+    border-width: 5px;
+    height: 750px;
+    width: 570px;
+    border-radius: 15px;
+    padding-top: 5px;
+    border-width: 10px;
+}
+
 .start-section {
-    /* margin: 50px; */
     text-align: center;
 }
 
-.description {
-}
 .end-section {
-    /* margin: 50px; */
     display: flex;
     justify-content: space-around;
     justify-items: end;
 }
 
-.img-post {
-    width: 100%;
+p {
+    display: inline;
 }
 
-.item {
+.img-post {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.like {
+    display: inline;
+    margin: 15px;
+}
+
+.single-post {
     margin: 15px;
 }
 
