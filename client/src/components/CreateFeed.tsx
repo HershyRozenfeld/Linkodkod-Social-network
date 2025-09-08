@@ -1,11 +1,10 @@
 import AddPost from "./AddPost";
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
 
 export default function CreateFeed() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     async function postList() {
       try {
@@ -25,7 +24,7 @@ export default function CreateFeed() {
     listItems = posts.map((element) => {
       return(
       <>
-      <div className="item">
+      <div className="single-post">
         <AddPost
               key={element.id}
               description={element.description}
@@ -39,8 +38,8 @@ export default function CreateFeed() {
     });
     return (
       <>
-      <Header />
-        <div className="container">{listItems}</div>
+        <div className="post-list">       {listItems}
+        </div>
       </>
     );
   }

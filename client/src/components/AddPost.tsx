@@ -1,11 +1,11 @@
-import "./post.css";
+import "/src/css/post.css";
 export default function AddPost(props: {
   writer: string;
   imgUrl: string;
   likesCount: number;
   createDate: any;
+  description: string;
 }) {
-
   return (
     <>
       <div className="card">
