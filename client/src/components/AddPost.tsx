@@ -1,17 +1,17 @@
 import "./post.css";
 export default function AddPost(props: {
-  title: string;
+  writer: string;
   imgUrl: string;
   likesCount: number;
   createDate: any;
 }) {
-  console.log(props);
 
   return (
     <>
       <div className="card">
         <section className="start-section">
-          <h2>{props.title}</h2>
+          <h3 className="writer-name">{props.writer}</h3>
+          <p className="description">{props.description}</p>
         </section>
         <img className="img-post" src={props.imgUrl} />
         <section className="end-section">

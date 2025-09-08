@@ -1,32 +1,32 @@
 [
   {
     "id": "1",
-    "title": "post number 1",
-    "desciption": "desciption post number 1",
+    "writer": "hershy rosenfeld",
+    "description":"האם \"ה-API של המוח\" באמת כל כך גרוע – או שפשוט לא קראנו את התיעוד?",
     "imgUrl": "./src/images/Ai_take_jobs.jpeg",
     "likesCount": 0,
     "createDate": "07/09/2025"
   },
   {
     "id": "2",
-    "title": "post number 2",
-    "desciption": "desciption post number 2",
+    "writer": "hershy rosenfeld",
+    "description":"האם \"ה-API של המוח\" באמת כל כך גרוע – או שפשוט לא קראנו את התיעוד?",
     "imgUrl": "./src/images/boring.jpeg",
     "likesCount": 2,
     "createDate": "07/09/2025"
   },
   {
     "id": "3",
-    "title": "post number 3",
-    "desciption": "desciption post number 3",
+    "writer": "hershy rosenfeld",
+   "description":"האם \"ה-API של המוח\" באמת כל כך גרוע – או שפשוט לא קראנו את התיעוד?",
     "imgUrl": "./src/images/brain_API.jpeg",
     "likesCount": 3,
     "createDate": "07/09/2025"
   },
   {
     "id": "4",
-    "title": "post number 4",
-    "desciption": "desciption post number 4",
+    "writer": "hershy rosenfeld",
+   "description":"האם \"ה-API של המוח\" באמת כל כך גרוע – או שפשוט לא קראנו את התיעוד?",
     "imgUrl": "./src/images/brain.jpeg",
     "likesCount": 4,
     "createDate": "07/09/2025"
