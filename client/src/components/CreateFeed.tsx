@@ -1,5 +1,6 @@
 import AddPost from "./AddPost";
 import React, { useState, useEffect } from "react";
+import Header from "./Header";
 
 export default function CreateFeed() {
   const [posts, setPosts] = useState([]);
@@ -27,7 +28,8 @@ export default function CreateFeed() {
       <div className="item">
         <AddPost
               key={element.id}
-              title={element.title}
+              description={element.description}
+              writer={element.writer}
               imgUrl={element.imgUrl}
               likesCount={element.likesCount}
               createDate={element.createDate}
@@ -37,6 +39,7 @@ export default function CreateFeed() {
     });
     return (
       <>
+      <Header />
         <div className="container">{listItems}</div>
       </>
     );

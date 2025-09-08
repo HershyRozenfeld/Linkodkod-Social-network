@@ -1,13 +1,16 @@
 .card {
-    background-color: white;
+    background-color: rgb(244, 242, 239);
     border-width: 5px;
-    border: #386c7aaa;
+    border: #ef500caa;
     height: 750px;
     width: 570px;
     border-radius: 15px;
+    padding-top: 5px;
+    padding-left: px;
+    border-width: 10px;
 }
 
-img {
+.img-post {
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -27,25 +30,30 @@ p {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: rgb(225, 229, 232);
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: rgb(153, 179, 199);
+    background-image: url("./src/images/logo.png");
+    background-repeat:repeat;
+    background-attachment: fixed;
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .start-section {
-    margin: 50px;
+    /* margin: 50px; */
+    text-align: center;
 }
 
+.description {
+}
 .end-section {
     /* margin: 50px; */
     display: flex;
@@ -59,4 +67,16 @@ body {
 
 .item {
     margin: 15px;
+}
+
+.start-section .writer-name {
+    text-align:start;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+.logo {
+    width: 150px;
+    height:150px;
+    border-radius: 30px;
 }
