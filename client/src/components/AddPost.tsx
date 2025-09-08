@@ -10,11 +10,13 @@ export default function AddPost(props: {
   return (
     <>
       <div className="card">
-        <h2>{props.title}</h2>
+        <section className="start-section">
+          <h2>{props.title}</h2>
+        </section>
         <img className="img-post" src={props.imgUrl} />
         <section className="end-section">
-          <button className="like">like ({props.likesCount})</button>
           <p>{props.createDate}</p>
+          <button className="like">like ({props.likesCount})</button>
         </section>
       </div>
     </>

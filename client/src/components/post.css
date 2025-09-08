@@ -1,10 +1,10 @@
 .card {
-    background-color: aquamarine;
-    padding: 2em;
+    background-color: white;
     border-width: 5px;
     border: #386c7aaa;
-    width: 250px;
-    height: 400px;
+    height: 750px;
+    width: 570px;
+    border-radius: 15px;
 }
 
 img {
@@ -12,11 +12,14 @@ img {
     justify-self: center;
     justify-content: center;
     align-items: center;
+    width: 450px;
+    height: 600px;
 }
 
 .like {
     display: inline;
     margin: 15px;
+    /* justify-content: start; */
 }
 
 p {
@@ -29,6 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: rgb(225, 229, 232);
 }
 
 #root {
@@ -38,15 +42,19 @@ body {
   text-align: center;
 }
 
+.start-section {
+    margin: 50px;
+}
+
 .end-section {
-    flex: auto;
-    justify-content:flex-end;
+    /* margin: 50px; */
+    display: flex;
+    justify-content: space-around;
+    justify-items: end;
 }
 
 .img-post {
-    width: 248px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .item {
