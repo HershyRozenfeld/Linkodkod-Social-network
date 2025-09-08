@@ -8,6 +8,10 @@ body {
     background-attachment: fixed;
 }
 
+.post-list {
+ margin-top: 120px;
+}
+
 .card {
     background-color: rgb(244, 242, 239);
     height: 750px;

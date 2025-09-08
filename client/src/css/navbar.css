@@ -8,11 +8,15 @@
 
 nav {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.930);
     width: 100%;
     border-bottom: 1px;
     border-bottom-style: solid;
     border-color: rgb(80, 126, 233);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
