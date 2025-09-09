@@ -1,0 +1,48 @@
+.routing {
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    width: 100%;
+}
+
+.home-route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 15px;
+}
+
+.home-span {
+    font-size: 10px;
+    margin: -2px;
+}
+
+a {
+    color: #171c71
+}
+
+.svg-home {
+    width: 32px;
+    height: 32px;
+}
+
+.search-route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 15px;
+}
+
+.svg-search {
+    width: 32px;
+    height: 32px;
+}
+
+.search-span {
+    font-size: 10px;
+    margin: -2px;
+}
