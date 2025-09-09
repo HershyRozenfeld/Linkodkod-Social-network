@@ -15,8 +15,12 @@ export default function AddPost(props: {
         </section>
         <img className="img-post" src={props.imgUrl} />
         <section className="end-section">
-          <p>{props.createDate}</p>
-          <button className="like">like ({props.likesCount})</button>
+          <div className="date">
+            <p>{props.createDate}</p>
+          </div>
+          <div className="like">
+            <div className="like-button">like ({props.likesCount})</div>
+          </div>
         </section>
       </div>
     </>
