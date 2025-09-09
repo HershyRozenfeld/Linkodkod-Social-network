@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 export default function CreateFeed() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     async function postList() {
       try {
@@ -22,24 +22,21 @@ export default function CreateFeed() {
   let listItems = [];
   if (!loading) {
     listItems = posts.map((element) => {
-      return(
-      <>
-      <div className="single-post">
-        <AddPost
-              key={element.id}
+      return (
+          <div key={element.id} className="single-post">
+            <AddPost
               description={element.description}
               writer={element.writer}
               imgUrl={element.imgUrl}
               likesCount={element.likesCount}
               createDate={element.createDate}
             />
-      </div>
-      </>)
+          </div>
+      );
     });
     return (
       <>
-        <div className="post-list">       {listItems}
-        </div>
+        <div className="post-list"> {listItems}</div>
       </>
     );
   }

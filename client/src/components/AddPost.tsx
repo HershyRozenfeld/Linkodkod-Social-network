@@ -18,7 +18,9 @@ export default function AddPost(props: {
           <div className="date">
             <p>{props.createDate}</p>
           </div>
-          <div className="like">like ({props.likesCount})</div>
+          <div className="like">
+            <div className="like-button">like ({props.likesCount})</div>
+          </div>
         </section>
       </div>
     </>
