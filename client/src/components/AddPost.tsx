@@ -13,7 +13,7 @@ export default function AddPost(props: {
           <h3 className="writer-name">{props.writer}</h3>
           <p className="description">{props.description}</p>
         </section>
-        <img className="img-post" src={props.imgUrl} />
+        <img className="img-post" src={props.imgUrl} alt="image for tengible the content"/>
         <section className="end-section">
           <div className="date">
             <p>{props.createDate}</p>

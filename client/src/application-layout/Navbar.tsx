@@ -1,4 +1,5 @@
 import Logo from "./Logo"
+import Routing from "./Routing";
 import Slogan from "./Slogan"
 import "/src/css/navbar.css";
 
@@ -8,6 +9,7 @@ export default function Navbar(){
     <nav className="nav">
         <Logo />
         <Slogan />
+        <Routing />
     </nav>
     </>
     )
