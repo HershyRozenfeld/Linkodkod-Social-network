@@ -9,7 +9,7 @@ body {
 }
 
 .post-list {
- margin-top: 120px;
+    margin-top: 120px;
 }
 
 .card {
@@ -47,8 +47,21 @@ p {
 }
 
 .like {
-    display: inline;
+    width: 100%;
+    display: flex;
+    justify-content: end;
     margin: 15px;
+    border-width: 1px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.date {
+    width: 100%;
+    margin: 15px;
+    border-width: 1px;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .single-post {
@@ -60,4 +73,3 @@ p {
     margin: 10px;
     margin-left: 25px;
 }
-
