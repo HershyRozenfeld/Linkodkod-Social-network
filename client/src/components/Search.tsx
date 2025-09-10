@@ -51,7 +51,7 @@ export default function Search() {
     }
   }, [clicked]);
 
-  if (!clicked && loading) {
+  if (loading) {
     return <>{searchTamplate}</>;
   } else if (!loading) {
     return (
