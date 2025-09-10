@@ -1,7 +1,13 @@
 .search-input {
+    background-color: rgb(244, 242, 239);
+    width: 565px;
+    border-radius: 15px;
+    border-width: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+    margin: 15px;
 }
 
 .input {
@@ -14,8 +20,10 @@
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
+    display: flex;
     text-align: center;
     border-color: white;
+    align-items: center;
 }
 
 .input:hover {
