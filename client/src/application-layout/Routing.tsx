@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import '/src/css/routes.css';
+import "/src/css/routes.css";
 export default function Routing() {
   return (
     <>
@@ -12,9 +12,19 @@ export default function Routing() {
             <span className="home-span">Home</span>
           </div>
         </Link>
+        <Link to="/create">
+          <div className="create-route">
+            <svg className="svg-create"
+              viewBox="0 0 24 24" fill="currentColor"
+            >
+              <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
+            </svg>
+            <span className="create-span">Create</span>
+          </div>
+        </Link>
         <Link to="/search">
           <div className="search-route">
-            <svg className="svg-search" viewBox="0 0 24 24"       fill="currentColor">
+            <svg className="svg-search" viewBox="0 0 24 24" fill="currentColor">
               <path d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z"></path>
             </svg>
             <span className="search-span">Search</span>

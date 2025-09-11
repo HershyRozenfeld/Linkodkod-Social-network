@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "/src/css/search.css";
-import "/src/css/post.css";
+import { useState, useEffect } from "react";
+import "../css/search.css";
+import "../css/post.css";
 import AddPost from "./AddPost";
+import type { AddPostProps } from "../types"
 
 export default function Search() {
   const [inputValue, setInputValue] = useState("");
   const [clicked, setclick] = useState(false);
-  const [post, setPost] = useState([]);
+  const [post, setPost] = useState<AddPostProps[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
@@ -20,10 +21,12 @@ export default function Search() {
         type="text"
         value={inputValue}
         onChange={handleChange}
-        placeholder="...חפש לפי מזהה יחודי של פוסט"
+        placeholder="חפש לפי מזהה ייחודי של פוסט... (לדוגמא 1, 2, 3)"
       ></input>
       <button
-        onClick={() => {inputValue ? setclick(!clicked) : null}}
+        onClick={() => {
+          inputValue ? setclick(!clicked) : null;
+        }}
         className="input-button"
       >
         Search
@@ -37,12 +40,15 @@ export default function Search() {
         const response = await fetch(
           `http://localhost:3000/api/post/${inputValue}`
         );
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
         const data = await response.json();
         setPost(data);
+        setLoading(false);
       } catch (error) {
         console.error("Error loading file:", error);
       } finally {
-        setLoading(false);
         setInputValue("");
       }
     }
@@ -56,17 +62,16 @@ export default function Search() {
   } else if (!loading) {
     return (
       <>
-      
         <div className="post-list">
           {searchTamplate}
           <div className="single-post">
             {
-              <AddPost
-                description={post[0].description}
-                writer={post[0].writer}
-                imgUrl={post[0].imgUrl}
-                likesCount={post[0].likesCount}
-                createDate={post[0].createDate}
+              <AddPost 
+                Description={post[0].description}
+                Writer={post[0].writer}
+                ImgUrl={post[0].imgUrl}
+                LikesCount={post[0].likesCount}
+                CreateDate={post[0].createDate}
               />
             }
           </div>
