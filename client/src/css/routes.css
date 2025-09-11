@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.home-route {
+.home-route, .create-route {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,18 +14,8 @@
     margin-right: 15px;
 }
 
-.home-span {
-    font-size: 10px;
-    margin: -2px;
-}
-
 a {
     color: #171c71
-}
-
-.svg-home {
-    width: 32px;
-    height: 32px;
 }
 
 .search-route {
@@ -37,12 +27,12 @@ a {
     margin-right: 15px;
 }
 
-.svg-search {
+.svg-home, .svg-search, .svg-create {
     width: 32px;
     height: 32px;
 }
 
-.search-span {
+.search-span, .create-span, .home-span {
     font-size: 10px;
     margin: -2px;
 }

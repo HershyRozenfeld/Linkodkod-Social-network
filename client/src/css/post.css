@@ -3,7 +3,7 @@ body {
     justify-content: center;
     margin: 0;
     background-color: rgb(186, 207, 223);
-    background-image: url("./src/images/logo.png");
+    background-image: url("https://linkodkod-social-network.onrender.com/images/logo.png");
     background-repeat: repeat;
     background-attachment: fixed;
 }

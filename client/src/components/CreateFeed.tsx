@@ -1,5 +1,6 @@
 import AddPost from "./AddPost";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import type { AddPostProps } from "../types"
 
 export default function CreateFeed() {
   const [posts, setPosts] = useState([]);
@@ -8,7 +9,7 @@ export default function CreateFeed() {
   useEffect(() => {
     async function postList() {
       try {
-        const response = await fetch("http://localhost:3000/db/posts.json");
+        const response = await fetch("https://linkodkod-social-network.onrender.com/db/posts.json");
         const data = await response.json();
         setPosts(data);
       } catch (error) {
@@ -19,19 +20,19 @@ export default function CreateFeed() {
     }
     postList();
   }, []);
-  let listItems = [];
+
   if (!loading) {
-    listItems = posts.map((element) => {
+    const listItems = posts.map((element:AddPostProps) => {
       return (
-          <div key={element.id} className="single-post">
-            <AddPost
-              description={element.description}
-              writer={element.writer}
-              imgUrl={element.imgUrl}
-              likesCount={element.likesCount}
-              createDate={element.createDate}
-            />
-          </div>
+        <div key={element.id} className="single-post">
+          <AddPost
+            Description={element.description}
+            Writer={element.writer}
+            ImgUrl={element.imgUrl}
+            LikesCount={element.likesCount}
+            CreateDate={element.createDate}
+          />
+        </div>
       );
     });
     return (
