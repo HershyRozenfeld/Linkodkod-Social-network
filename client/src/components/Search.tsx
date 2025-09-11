@@ -38,7 +38,7 @@ export default function Search() {
     async function SetPost() {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/post/${inputValue}`
+          `https://linkodkod-social-network.onrender.com/api/post/${inputValue}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

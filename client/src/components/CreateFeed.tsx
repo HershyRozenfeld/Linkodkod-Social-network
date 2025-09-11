@@ -9,7 +9,7 @@ export default function CreateFeed() {
   useEffect(() => {
     async function postList() {
       try {
-        const response = await fetch("http://localhost:3000/db/posts.json");
+        const response = await fetch("https://linkodkod-social-network.onrender.com/db/posts.json");
         const data = await response.json();
         setPosts(data);
       } catch (error) {

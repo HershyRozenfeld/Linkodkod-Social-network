@@ -19,7 +19,7 @@ export default function CreatePost() {
         likesCount: 0,
         createDate: new Date().toLocaleDateString(),
       };
-      fetch("http://localhost:3000/api/post/new", {
+      fetch("https://linkodkod-social-network.onrender.com/api/post/new", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
