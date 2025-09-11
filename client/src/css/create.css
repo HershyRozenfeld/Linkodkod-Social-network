@@ -15,7 +15,6 @@
     border-radius: 15px;
     border-width: 0px;
     padding: 6px;
-    /* background-color: #f9f9f9; */
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
@@ -23,6 +22,7 @@
     text-align: center;
     border-color: white;
     align-items: center;
+    margin: 15px;
 }
 
 .create-textarea {
@@ -33,4 +33,16 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
+}
+
+.create-input {
+    background-color: rgb(244, 242, 239);
+    width: 565px;
+    border-radius: 15px;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin: 15px;
 }
